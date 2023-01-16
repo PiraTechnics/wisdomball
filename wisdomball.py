@@ -1,6 +1,8 @@
 import random
+import urllib.request
 
-with open('wisdom') as wisdom_list:
-    contents = wisdom_list.read()
+url = 'https://raw.githubusercontent.com/PiraTechnics/wisdomball/main/wisdom'
+wisdom_list = urllib.request.urlopen(url).read().splitlines()
 
-print(contents)
+random_line = random.randint(0, len(wisdom_list))
+print(wisdom_list[random_line].decode('utf-8'))
