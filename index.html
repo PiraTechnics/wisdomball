@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wisdomball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The Wonderful Wisdom Ball</h1>
+    </header>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-auto col-sm-auto col-md-8 col-lg-6 mx-auto">
+                <img src="images/orb.png" class="img-fluid" alt="Orb of Knowledge">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto mx-auto">
+                <button type="button" class="btn btn-primary btn-lg" type="submit" onClick="loadWisdom()">
+                    Get some Wisdom!
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto mx-auto">
+                <div id="wisdom" class="fs-2 fw-light fst-italic"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="js/utils.js"></script>
+</body>
+
+</html>
